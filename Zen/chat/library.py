@@ -14,7 +14,7 @@ DOCS_PATH = "docs.pkl"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 # Initialize Groq client (keep existing usage; recommend using env var in production)
-client = Groq(api_key=os.getenv("GROQ_API_KEY", "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"))
+client = Groq(api_key=os.getenv("GROQ_API_KEY", "your api key"))
 
 
 def extract_text_from_pdf(path: str) -> str:
@@ -197,4 +197,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
